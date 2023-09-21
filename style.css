@@ -718,9 +718,9 @@ input:focus::placeholder,textarea:focus::placeholder
 {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
     margin-top: 40px;
     padding: 40px 0px;
+    height: 355px;
 }
 .chef
 {
@@ -773,9 +773,14 @@ input:focus::placeholder,textarea:focus::placeholder
 }
 .chef:hover .chef-media
 {
-    position: relative;
+    position:relative;
     visibility: visible;
     top: 15px;
+}
+.chef:hover
+{
+    cursor: pointer;
+    transform:scaleY(1);
 }
 .testimonial 
 {
@@ -934,6 +939,13 @@ li
     right: 10px;
     top: 105px;
     padding: 10px;
+    cursor: pointer;
+}
+#foot-signup:hover 
+{
+    background-color: rgb(249, 162, 1);
+    cursor: pointer;
+    opacity: 80%;
 }
 #newsletter input[type=email]
 {
