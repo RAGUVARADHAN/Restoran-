@@ -196,7 +196,7 @@ html
 .home-cont 
 {
     line-height: 20px;
-    margin-top: 30px;
+    margin-top: 10px;
     font-family: 'Roboto', sans-serif;
     line-height: 25px;
     font-weight: 300;
@@ -223,8 +223,8 @@ html
 }
 .img 
 {
-    height:37em;
-    width: 37em;
+    height:32em;
+    width: 32em;
     animation: rotateimg 25s linear infinite;
 }
 @keyframes rotateimg 
