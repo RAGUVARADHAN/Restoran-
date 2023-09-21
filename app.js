@@ -8,7 +8,11 @@ let homeCont=document.querySelector(".home-cont");
 let homeButt=document.querySelector("#home-butt");
 let flex=document.querySelector(".flex");
 let arrow=document.querySelector(".arrow");
-
+let service=document.getElementById("service");
+let flexOne=document.querySelector(".flex-one");
+let flexTwo=document.querySelector(".flex-two");
+let flexThree=document.querySelector(".flex-three");
+let flexFour=document.querySelector(".flex-four");
 
 //up-arrow 
 arrow.addEventListener("click",()=>
@@ -49,7 +53,6 @@ console.log(scroll);
 window.addEventListener("scroll",()=>
 {
     let scroll=window.scrollY;
-    console.log(scroll);
     if(scroll>=28 && scroll<678)
     {
         navlink[0].classList.add("nav-links-scroll");
@@ -123,15 +126,6 @@ window.addEventListener("load",()=>
     homeHead.classList.add("home-js");
     homeCont.classList.add("home-js");
     homeButt.classList.add("home-js");
-})
-
-//service js while scroll 280
-window.addEventListener("load",()=>
-{
-    let windowheight=window.innerHeight;
-    let flexheight=flex.offsetHeight;
-    console.log(windowheight);
-    console.log(flexheight);
 })
 
 

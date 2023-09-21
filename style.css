@@ -97,12 +97,9 @@ html
 .dropdown-links  
 {
     position:absolute;
-    border: 1px solid red;
     background: white;
     border-radius: 2px;
     height: 100px;
-    top: 80px;
-    visibility: hidden;
 }
 .dropdown-links li 
 {
@@ -110,19 +107,27 @@ html
 }
 .dropdown-links li a 
 {
-    color: blue;
+    color: rgb(45, 53, 73);
 }
 .dropdown-link 
 {
     position:relative;
-    font-weight: 100;
-    color: blue;
+    font-weight: 400;
     left: 10px;
 }
-.page:hover .dropdown-link
+.page + .dropdown-links
 {
-    background-color: red;
+    visibility: hidden;
 }
+.page:hover + .dropdown-links
+{
+    visibility: visible;
+}
+.dropdown-links:hover
+{
+    visibility: visible;
+}
+
 .nav-links li,a 
 {
     list-style-type: none;
@@ -254,49 +259,6 @@ html
     display: flex;
     align-items: center;
     background-color: rgb(231, 232, 233);
-}
-#ser-flex-1 
-{
-    animation: service-anime 1s linear;
-}
-#ser-flex-2 
-{
-    animation: service-anime 1s linear 0.5s;
-}
-#ser-flex-3 
-{
-    animation: service-anime 1s linear 1s;
-}
-#ser-flex-4
-{
-    animation: service-anime 1s linear 1.5s;
-}
-@keyframes service-anime
-{
-    0%
-    {
-        visibility:hidden;
-        position: relative;
-        top: 100px;
-    }
-    25%
-    {
-        visibility:hidden;
-        position: relative;
-        top: 50px;
-    }
-    50%
-    {
-        visibility:hidden;
-        position: relative;
-        top: 25px;
-    }
-    100%
-    {
-        visibility:visible;
-        position: relative;
-        top: 0px;
-    }
 }
 .flex .flex-one,.flex-two,.flex-three,.flex-four 
 {
@@ -984,5 +946,8 @@ li
     border-right: 1px solid white;
     opacity: 0.3;
     padding-right: 10px;
-
+}
+#newsletter input::placeholder
+{
+    padding-left: 10px;
 }
